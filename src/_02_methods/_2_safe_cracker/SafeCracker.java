@@ -23,17 +23,20 @@ public class SafeCracker {
 	public static void main(String[] args) {
 		new SafeCracker().crackTheSafe();
 	}
-
+	int code = 173249;
 	void crackTheSafe() {
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */		
-
+		for(int chez = 0;chez<20000000;chez +=1){
+			tryCode(chez);
+			
+		}
 	}
 
 	 void tryCode(int guess) {
-		System.out.println("trying " + guess);
+	//	System.out.println("trying " + guess);
 
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
 
